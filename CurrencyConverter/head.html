@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body class="m-0 p-0 box-border bg-[#090909]">
+    <form action="">
+      <div
+        class="w-full h-screen flex flex-col justify-center bg-[url('/img/money.jpg')] items-center"
+      >
+        <h2
+          class="text-black font-extrabold text-3xl underline hover:text-white"
+        >
+          Currency Converter
+        </h2>
+        <div
+          class = " backdrop-blur-sm border-2  flex justify-around items-start gap-24 h-80  border-black w-10/12"
+        >
+          <div class="h-60 w-2/5 flex justify-center gap-5 items-center">
+            <h3 class="text-black font-bold text-xl">From</h3>
+            <img
+              src="https://flagsapi.com/US/flat/64.png"
+              id="firstFlag"
+              class="h-20"
+            />
+            <select
+              name="from"
+              id="from"
+              class="pt-1 pb-1 cursor-pointer text-center font-bold bg-sky-400"
+            ></select>
+            <input type="number" placeholder="FROM" id="fromCode" class="p-1" />
+          </div>
+
+          <div class="h-60 w-2/5 flex justify-center gap-5 items-center">
+            <h3 class="text-black font-bold text-xl">To</h3>
+            <img
+              src="https://flagsapi.com/IN/flat/64.png"
+              id="secondFlag"
+              class="h-20"
+            />
+            <select
+              name="to"
+              id="to"
+              class="pt-1 pb-1 cursor-pointer text-center font-bold bg-sky-400"
+            ></select>
+            <input
+              type="number"
+              placeholder="TO"
+              disabled
+              id="toCode"
+              class="p-1 text-center bg-sky-700 text-white font-bold"
+            />
+          </div>
+          <div
+            class="border-2 rounded-xl bg-green-500 flex-none absolute top-1/2 hover:bg-green-400 hover:border-gray-600"
+          >
+            <button class="text-black p-3 font-bold text-xl " id="btn">
+              Exchange
+            </button>
+          </div>
+        </div>
+      </div>
+    </form>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

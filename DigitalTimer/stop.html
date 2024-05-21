@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Stop Watch</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+        } 
+        #time {
+            display: inline-block;
+            width: 20ch;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="w-full h-screen bg-[#111] text-white flex flex-col justify-center items-center">
+    <div class=" text-4xl text-center underline fixed top-0 w-full mt-10">
+        <p>Stop Watch</p>
+    </div>
+    <div class="w-[900px] h-[250px] border-2 border-[#fff] flex flex-col justify-center items-center bg-[#876234] rounded-md">
+        <div class="border-2 border-[#a1f28d] m-5 px-16 text-6xl font-semibold rounded-lg py-3">
+            <span id="time">00 : 00 : 00 : 00</span>
+        </div>
+        <div class="font-semibold text-xl">
+            <button id="start" class="border px-4 py-1 m-3 rounded-md bg-green-700 hover:bg-green-600 outline-none cursor-pointer" onclick="start()">START</button>
+            <button id="stop" class="border px-4 py-1 m-3 rounded-md bg-red-700 hover:bg-red-500 outline-none cursor-pointer" onclick="stop()">STOP</button>
+            <button id="reset" class="border px-4 py-1 m-3 rounded-md bg-blue-700 hover:bg-blue-600 outline-none cursor-pointer" onclick="reset()">RESET</button>
+        </div>
+    </div>
+    <div class="font-semibold bottom-32 font-mono text-center fixed w-full mt-10">
+        <a href="./index.html" class="border-2 px-6 py-2 rounded-md hover:border-sky-300">Digital Clock</a>
+    </div>
+    <script src="./stop.js"></script>
+</body>
+</html>
